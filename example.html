@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="api.js"></script>
+</head>
+<body onload="convert();">
+
+<h1>channel name: <input type="text" id="input"></h1>
+<p id="resultP"></p>
+
+</body>
+<script type="text/javascript">
+    var initialName;
+    function convert(){
+        var request = document.getElementById('input').value;
+        if(request != ""){
+        if(request != initialName){initialName = request;
+        
+        youtubeChannelIdConvert(request);
+        waitForResult();}}
+        setTimeout(convert, 600);
+    }
+    function waitForResult(){
+        if(youtubeChannelIdConverterResult == ""){
+        setTimeout(waitForResult, 100);
+        }else{
+        document.getElementById('resultP').innerHTML = "result: "+youtubeChannelIdConverterResult;}
+    }
+</script>
+</html>
