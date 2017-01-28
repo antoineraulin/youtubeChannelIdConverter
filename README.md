@@ -9,4 +9,4 @@ youtubeChannelIdConverter est une api qui permet de convertir le nom d'une chain
 ```javascript
 youtubeChannelIdConvert("pewdiepie");
 ```
-* the result is in the youtubeChannelIdConverterResult variable.(maybe you must wait until the variable has a value other than nothing. cf: example.html)
+* the result is in the youtubeChannelIdConverterResult variable.(maybe you must wait until the variable has a value other than nothing. cf: [example.html](http://github.com/antoineraulin/youtubeChannelIdConverter/blob/master/example.html))
