@@ -5,5 +5,8 @@ youtubeChannelIdConverter est une api qui permet de convertir le nom d'une chain
 
 # How to Use:
 
-* call the function youtubeChannelIdConvert(); With as option the name of the channel to convert.*Ex: `youtubeChannelIdConvert("pewdiepie");`*
+* call the function youtubeChannelIdConvert(); With as option the name of the channel to convert.Ex: 
+```javascript
+youtubeChannelIdConvert("pewdiepie");
+```
 * the result is in the youtubeChannelIdConverterResult variable.(maybe you must wait until the variable has a value other than nothing. cf: example.html)
